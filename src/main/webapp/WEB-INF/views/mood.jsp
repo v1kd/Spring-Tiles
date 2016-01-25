@@ -14,6 +14,7 @@
     <title>Mood</title>
 </head>
 <body>
-    You are mood <c:out value="${mood.feeling}" />
+    <p>You are mood <c:out value="${mood.feeling}" /></p>
+    <p><a href="<c:url value="/reason/${mood.feeling}" />">Reason</a></p>
 </body>
 </html>
