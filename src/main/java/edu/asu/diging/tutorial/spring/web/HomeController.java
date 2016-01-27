@@ -17,6 +17,15 @@ public class HomeController {
     @RequestMapping("/")
     public String home(Model model) {
         model.addAttribute("head", "Spring tutorial");
-        return "index";
+        return "home";
+    }
+
+    /**
+     *
+     * @return view
+     */
+    @RequestMapping("/about")
+    public String about() {
+        return "about";
     }
 }

@@ -9,11 +9,4 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page isELIgnored="false" %>
 
-<html>
-<head>
-    <title>Mood</title>
-</head>
-<body>
-    The reason is: <c:out value="${reason}" />
-</body>
-</html>
+<p>The reason is: <c:out value="${reason}" /></p>

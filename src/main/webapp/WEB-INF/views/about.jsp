@@ -9,5 +9,4 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page isELIgnored="false" %>
 
-<p>You are mood <c:out value="${mood.feeling}" /></p>
-<p><a href="<c:url value="/reason/${mood.feeling}" />">Reason</a></p>
+<p>This is my page :)</p>

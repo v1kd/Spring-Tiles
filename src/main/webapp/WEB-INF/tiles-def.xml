@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <!-- Base definition -->
+    <definition name="base.definition" template="/WEB-INF/tiles/layouts/skeleton.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+        <put-attribute name="currentPage" value="home" />
+    </definition>
+    <!--Home-->
+    <definition name="home" extends="base.definition">
+        <put-attribute name="title" value="Quadriga - Home" />
+        <put-attribute name="content" value="/WEB-INF/views/home.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+    </definition>
+
+    <!--About-->
+    <definition name="about" extends="base.definition">
+        <put-attribute name="title" value="Quadriga - Home" />
+        <put-attribute name="content" value="/WEB-INF/views/about.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+        <put-attribute name="currentPage" value="about" />
+    </definition>
+
+    <!--Mood-->
+    <definition name="mood" extends="base.definition">
+        <put-attribute name="title" value="Quadriga - Mood" />
+        <put-attribute name="content" value="/WEB-INF/views/mood.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+        <put-attribute name="currentPage" value="mood" />
+    </definition>
+
+    <!--Reason or explanation-->
+    <definition name="reason" extends="base.definition">
+        <put-attribute name="title" value="Quadriga - Reason for Mood" />
+        <put-attribute name="content" value="/WEB-INF/views/reason.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+        <put-attribute name="currentPage" value="reason" />
+    </definition>
+
+</tiles-definitions>
